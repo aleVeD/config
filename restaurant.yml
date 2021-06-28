@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8766/eureka
+      default-zone: http://localhost:8761/eureka
   instance:
       status-page-url-path: /infoClient
       health-check-url-path: /healthClient
