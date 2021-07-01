@@ -8,3 +8,12 @@ eureka:
   instance:
       status-page-url-path: /infoClient
       health-check-url-path: /healthClient
+
+recipe:
+  ribbon:
+    EnableZoneAffinity: true
+    EnableZoneExclusive: false
+    zoneAffinity:
+      minAvailableServers: 1
+      maxLoadServer: 0.8
+      maxBlackOutServersPercentage: 0.6
